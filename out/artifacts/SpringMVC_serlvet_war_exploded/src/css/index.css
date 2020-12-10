@@ -1,0 +1,88 @@
+.title {
+    font-family: 微软雅黑;
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#drawingBoard{
+    width: 100%;
+    height: 100%;
+}
+
+#tableBoard{
+    width: 1100px;
+    left: 50%;
+    margin-left: -550px;
+    position: relative;
+    display: inline-block;
+}
+
+.item_container{
+    width: 15%;
+    height: 50px;
+    margin-right: 0.5%;
+    display: inline-block;
+    float: left;
+    position: relative;
+    background: pink;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.defualt_font{
+    font-family: 微软雅黑;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.blank2{
+    margin-left: 24%;
+}
+
+.input_text {
+    margin-left: 0.5%;
+    height: 60%;
+    width: 40%;
+    font-family: 微软雅黑;
+    font-size: 20px;
+
+}
+
+.input_container {
+    width: 84.5%;
+    height: 50px;
+    display: inline-block;
+    float: left;
+    background: pink;
+    margin-bottom: 6px;
+    position: relative;
+}
+
+.radio_buton {
+    margin-left: 0.5%;
+}
+
+.buton_container{
+    width: 250px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -175px;
+}
+
+.buton_attribute {
+    font-size: 15px;
+    margin-left: 10%;
+    display: inline-block;
+}
+.text_area{
+    font-family: 微软雅黑;
+    font-size: 18px;
+    height: 95%;
+    width: 98%;
+    margin-top: 0.5%;
+    margin-left: 0.5%;
+}
+
+.bu

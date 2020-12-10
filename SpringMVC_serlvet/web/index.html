@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册表</title>
+    <link rel="stylesheet" type="text/css" href="./src/css/index.css"/>
+</head>
+<body>
+<div class="title">用户注册表</div>
+<div id="drawingBoard">
+    <form action="http://localhost:8080/RegisterTable/learn" method="post">
+        <div id="tableBoard">
+            <div class="item_container">
+                <span class="defualt_font">姓<span class="blank2"/>名 :</span>
+            </div>
+            <div class="input_container">
+                <input class="input_text" name="username"><span class="defualt_font" style="color:red;">*</span></input>
+            </div>
+
+            <div class="item_container">
+                <span class="defualt_font">密<span class="blank2"/>码 :</span>
+            </div>
+            <div class="input_container">
+                <input class="input_text" name="password"><span class="defualt_font" style="color:red;">*</span></input>
+            </div>
+
+            <div class="item_container">
+                <span class="defualt_font">密码确认 :</span>
+            </div>
+            <div class="input_container">
+                <input class="input_text" name="ensure"><span class="defualt_font" style="color:red;">*</span></input>
+            </div>
+
+            <div class="item_container">
+                <span class="defualt_font">性<span class="blank2"/>别 :</span>
+            </div>
+            <div class="input_container">
+                <input id="female" checked name="sex" class="radio_buton" type="radio" value="女"><span
+                    class="defualt_font">女</span></input>
+                <input id="male" name="sex" class="radio_buton" type="radio" style="margin-left:2% " value="男"><span
+                    class="defualt_font">男</span></input>
+            </div>
+
+            <div class="item_container" style="height: 83px">
+                <span class="defualt_font">爱<span class="blank2"/>好 :</span>
+            </div>
+            <div class="input_container" style="height: 83px">
+                <input name="hobby" class="radio_buton" type="checkbox" value="跑步"><span class="defualt_font">跑步</span></input>
+                <input name="hobby" class="radio_buton" type="checkbox" style="margin-left:2% " value="阅读"><span
+                    class="defualt_font">阅读</span></input>
+                <div class="buton_container">
+                    <button id="all" type="button" class="buton_attribute">全选</button>
+                    <button id="rev" type="button" class="buton_attribute">反选</button>
+                    <button id="cls" type="button" class="buton_attribute">清除</button>
+                </div>
+            </div>
+
+            <div class="item_container">
+                <span class="defualt_font">出生日期 :</span>
+            </div>
+
+            <div class="input_container">
+                <select id="birthYear" name="date" class="defualt_font" style="margin-left: 0.5%">
+                </select>
+                <label class="defualt_font">年</label>
+                <select id="birthMonth" name="date" class="defualt_font" style="width: 5.0%">
+                </select>
+                <label class="defualt_font">月</label>
+                <select id="birthDate" name="date" class="defualt_font" style="width: 5.0%">
+                </select>
+                <label class="defualt_font">日</label>
+            </div>
+
+            <div class="item_container" style="height: 300px">
+                <span class="defualt_font">自我介绍 :</span>
+            </div>
+            <div class="input_container" style="height: 300px">
+                <textarea class="text_area" name="text_self"></textarea>
+            </div>
+
+            <div class="input_container" style="width: 100%">
+                <div class="buton_container" style="width: 140px; margin-top:10px; margin-left: -70px">
+                    <button type="submit" class="buton_attribute">提交</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript" src="./src/js/index.js"></script>
+</body>
+</html>
