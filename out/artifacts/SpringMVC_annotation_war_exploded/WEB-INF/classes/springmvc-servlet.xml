@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/mvc
+       https://www.springframework.org/schema/mvc/spring-mvc.xsd
+       http://www.springframework.org/schema/context
+       https://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--    自动扫描包-->
+    <context:component-scan base-package="man.kuke.controller"/>
+<!--    让SpringMVC 不处理静态资源 .css .js .html .mp3 .mp4-->
+    <mvc:default-servlet-handler/>
+<!--    配置注解驱动-->
+    <mvc:annotation-driven/>
+
+    <!--    视图解析器-->
+<!--    获取视图资源-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+          id="internalResourceViewResolver">
+        <!--        前缀-->
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <!--        后缀-->
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+</beans>
